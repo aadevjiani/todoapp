@@ -1,0 +1,10 @@
+/* To Do App */
+body{
+    text-align: center;
+}
+
+.btn{
+    background-color: crimson;
+    font-weight: bold;
+    color: #ffff;
+}
