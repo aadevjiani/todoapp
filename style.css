@@ -8,3 +8,13 @@ body{
     font-weight: bold;
     color: #ffff;
 }
+
+.editbtn{
+    background-color: olive;
+    font-weight: bold;
+    color: #ffff;
+}
+
+h1{
+    background-color: orchid;
+}
