@@ -19,8 +19,9 @@ function addTodo(){
 
     //create edit button
     var editBtn = document.createElement("button")
-    var editText = document.createTextNode("Edit")
+    var editText = document.createTextNode("Edit/Update")
     editBtn.setAttribute("class","editbtn")
+    editBtn.setAttribute("onclick","editTask(this)")
     editBtn.appendChild(editText)
 
 
@@ -37,6 +38,14 @@ function addTodo(){
 function deleteTask(e){             //e is a parameter any character/word canbe used elsewise
     // console.log(e.parentNode)
     e.parentNode.remove()
+}
+
+function editTask(e){
+    // e.parentNode.firstChild.nodeValue = "ali"
+    var val = e.parentNode.firstChild.nodeValue
+    var editValue = prompt("Enter value to Update",val)
+    // console.log(e.parentNode.firstChild)
+    e.parentNode.firstChild.nodeValue = editValue
 }
 
 function deleteAll(){
